@@ -46,14 +46,46 @@ nav .menunav__list-unstyled a {
   align-items: center;
   text-decoration-line: none;
 }
-a {
-  text-decoration: none;
+
+/* Style pour le sous-menu */
+nav .menunav__list-unstyled .sous-menu {
+  display: none; /* Cache le sous-menu par défaut */
+  position: absolute; /* Positionne le sous-menu en absolu par rapport à son parent */
+  background-color: #f0f0f0; /* Couleur de fond du sous-menu */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre portée pour le sous-menu */
+  padding: 10px 0; /* Padding vertical pour le sous-menu */
+  z-index: 999; /* Assure que le sous-menu est au-dessus des autres éléments */
+  border-radius: 4px; /* Bordures arrondies pour le sous-menu */
+  margin-top: 10%;
 }
+
+nav .menunav__list-unstyled:hover .sous-menu {
+  display: block; /* Affiche le sous-menu au survol de l'élément parent */
+}
+
+nav .menunav__list-unstyled .sous-menu li {
+  list-style: none; /* Supprime le style de liste pour les éléments du sous-menu */
+  padding: 8px 20px; /* Padding pour les éléments du sous-menu */
+  color: #333; /* Couleur du texte pour les éléments du sous-menu */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+nav .menunav__list-unstyled .sous-menu li:hover {
+  background-color: #ddd; /* Couleur de fond au survol des éléments du sous-menu */
+}
+
 .logo {
   font-family: "Poppins" sans-serif;
   font-weight: 500;
   font-size: 2rem;
   letter-spacing: 2px;
+}
+
+span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #367dbb;
 }
 
 .hero {
@@ -68,6 +100,17 @@ a {
   align-items: center;
   text-align: center;
   overflow: 1rem 0 0 0;
+}
+.hero2 {
+  width: auto;
+  color: white;
+  padding: 0 0 0;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .hero__item {
   justify-content: center;
@@ -198,7 +241,9 @@ header .right {
   color: black;
 }
 .header a:hover {
-  color: red;
+  background-color: #246a76;
+  border-radius: 15px;
+  color: white;
 }
 
 .container1 {
@@ -518,6 +563,122 @@ h2 {
 }
 .table__item img {
   width: 50%;
+}
+
+#slider {
+  margin: 0 auto;
+  width: 1000px;
+  height: 300px;
+  max-width: 100%;
+  text-align: center;
+}
+#slider input[type="radio"] {
+  display: none;
+}
+#slider label {
+  cursor: pointer;
+  text-decoration: none;
+}
+#slides {
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 400%;
+  line-height: 0;
+  height: 500px;
+}
+
+#slides .slide {
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+#controls {
+  margin: -200px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+}
+#controls label:hover {
+  opacity: 1;
+}
+
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
+}
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1),
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+  }
+  #slides {
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
+  }
+}
+
+.voirP {
+  background-color: #246a76;
+  color: white;
+  border-radius: 4px;
+  width: 80px;
+  min-height: 30px;
+  font-size: 1.5rem;
 }
 
 /*Contact*/

@@ -7,7 +7,7 @@
     <meta name=" description" content="portfolio de Kouassi N'cho">
     <link rel="shortcut" href="favicon.png" type=" image/x-icon">
     <link rel="stylesheet" href="./CSS/styles1.css">
-    <SCript src="./JS/global.js" defer></SCript>
+    <script src="./JS/global.js" defer></script>
 <body>
 <header class="header ">
     <div class="container1">
@@ -17,13 +17,42 @@
         </div>
 
         
-    <nav class="navbar ">
+    <!-- <nav class="navbar ">
         <ul  class="menunav__list-unstyled"> <a href="#hero">Accueil</a> </ul>
         <ul class="menunav__list-unstyled"><a href="#propos">A propros</a></ul>
         <ul class="menunav__list-unstyled"><a href="#Compétence">Compétence</a></ul>
-        <ul class="menunav__list-unstyled"><a href="#Portfolio">Mes Projets</a></ul>
+        <ul class="menunav__list-unstyled"><a href="#Portfolio">Mes Projets</a>
+            <ul>
+                Grilles de competence
+            </ul>
+        </ul>
+        <ul class="menunav__list-unstyled"><a href="Veille.html">Veille Informatique</a></ul>
         <ul class="menunav__list-unstyled"><a href="#Contact">Contact</a></ul>
+    </nav>-->
+
+
+    <nav class="navbar">
+        <ul>
+        <li  class="menunav__list-unstyled"> <a href="#hero">Accueil</a> </li>
+        <li class="menunav__list-unstyled"><a href="#propos">A propros</a></li>
+        <li class="menunav__list-unstyled"><a href="#Compétence">Compétence</a></li>
+        <li class="menunav__list-unstyled"><a href="#Portfolio">Mes Projets</a>
+            <ul class="sous-menu">
+                <li><a href="#Portfolio">Portfolio</a>
+                    PPE
+            </li>
+            <li><a href="#Portfolio">Portfolio</a>
+                PE
+        </li>
+            </ul>
+        </li>
+        <li class="menunav__list-unstyled"><a href="Veille.html">Veille Informatique</a></li>
+        <li class="menunav__list-unstyled"><a href="#Contact">Contact</a></li>
+    </ul>
     </nav>
+
+
+
     <div class="right">
     <div>
         <nav class=" header__reseau__list-unstyled">
@@ -54,7 +83,7 @@
           <div class="hero__item right"><img  class="avatar"  src="./IMAGES/AVATAR.png" alt=""></div> </div> 
           <div class="table__item"> 
           <div class="hero__item left">
-            <span>Jeune Développeur web  </span>
+             <span class="typed" data-typed-items=" Bienvenue sur mon Portfolio !"></span>
             <h1 class="titre">Etudiant en développement d'application </h1>
             <a class="down" href=/cv/Cv-Alternance2024.pdf download="Cv-Alternance2024.pdf">Downdload CV</a>
                 </div>
@@ -399,11 +428,21 @@ Après une année  à l'université, j'ai décidé de continuer mon cursus en BT
                                         Mise en place d'un site web de portfolio composé d'une page d'accueil comportant nom, prénom, diplôme, une page de présentation écrite , une page de projets: présentant des différents projets réalisés.</p>
                                     <h5 class="h3">Langages de programmation</h5>
                                     <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JS</li>
-                                       
-                                    </ul>
+                                        <li>HTML.TWING</li>
+                                        <li>BOOTSTRAP</li>
+                                        <li>PHP</li>
+                                   </ul>
+                                   <h5>Description des ressources documentaires, matérielles et logicielles utilisées</h5>
+                                   <ul>
+                                    <li>  SGBD : MySQL et SQLite</li>
+                                    <li>  environnement de travail collaboratif : Github</li>
+                                    <li> Environnement de développement : Symfony</li>
+                                    <li> Bibliothèques de composants : composants graphiques et d'accès aux données</li>
+                                    <li> Gestion de versions : Github</li>
+                                    <li> Tests des comportements anormaux : tests unitaires</li>
+                                   
+                                 <br> <br> <br>  <button class="voirP"><a href="Framework.html"> Voir le projet</a></button>
+                                    
                                 </div>
                         </div>
                     </div>

@@ -565,10 +565,10 @@ h2 {
   width: 50%;
 }
 
-#slider {
+.slide-content {
   margin: 0 auto;
   width: 100%;
-  height: 300px;
+
   max-width: 100%;
   text-align: center;
   margin-top: 10%;
@@ -588,9 +588,10 @@ h2 {
   position: absolute;
 }
 #overflow {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
+
 #slide1:checked ~ #slides .inner {
   margin-left: 0;
 }
@@ -675,11 +676,15 @@ h2 {
 
 .voirP {
   background-color: #246a76;
-  color: white;
+
   border-radius: 4px;
   width: 80px;
   min-height: 30px;
   font-size: 1.5rem;
+}
+.voirP a {
+  color: white;
+  text-decoration: none;
 }
 
 /*Contact*/

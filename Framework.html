@@ -7,40 +7,43 @@
     <meta name=" description" content="portfolio de Kouassi N'cho" />
     <link rel="shortcut" href="favicon.png" type=" image/x-icon" />
     <link rel="stylesheet" href="./CSS/styles1.css" />
+    <link rel="stylesheet" href="./CSS/styles2.css" />
     <script src="./JS/global.js" defer></script>
+    <script src="./JS/scripts.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container1">
         <div class="logo">Jacob N'cho</div>
-
         <nav class="navbar">
           <ul>
-            <li class="menunav__list-unstyled"><a href="#hero">Accueil</a></li>
             <li class="menunav__list-unstyled">
-              <a href="#propos">A propros</a>
+              <a href="index.html">Accueil</a>
             </li>
             <li class="menunav__list-unstyled">
-              <a href="#Compétence">Compétence</a>
+              <a href="index.html">A propros</a>
             </li>
             <li class="menunav__list-unstyled">
-              <a href="#Portfolio">Mes Projets</a>
+              <a href="index.html">Compétence</a>
+            </li>
+            <li class="menunav__list-unstyled">
+              <a href="index.html">Mes Projets</a>
               <ul class="sous-menu">
                 <li>
-                  <a href="#Portfolio">Portfolio</a>
+                  <a href="#">Portfolio</a>
                   PPE
                 </li>
                 <li>
-                  <a href="#Portfolio">Portfolio</a>
+                  <a href="index.html">Portfolio</a>
                   PE
                 </li>
               </ul>
             </li>
             <li class="menunav__list-unstyled">
-              <a href="Veille.html">Veille Informatique</a>
+              <a href="Veille.html" target="_blank">Veille Informatique</a>
             </li>
             <li class="menunav__list-unstyled">
-              <a href="#Contact">Contact</a>
+              <a href="index.html">Contact</a>
             </li>
           </ul>
         </nav>
@@ -104,95 +107,87 @@
       </div>
     </header>
     <section id="facts" class="facts">
-        <div class="container">
-  
-          <div class="section-title">
-            <h1 style="color: #246a76;">Mes projets scolaire en BTS SIO <b>  
-            Qu'est-ce que les PPE</b> ?</h1>
-            <p>Les PPE (Projets Personnalisés Encadrés) sont des travaux  (répartis selon la spécialité choisie à partir du deuxième semestre). Ils permettent de mettre en situation les élèves selon des contextes qu'ils pourraient rencontrer dans le monde professionnel.          </p>
-           
-              </div>
-          </div>
-        
-      </section>
-     
-    <div id="slider">
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-        <input type="radio" name="slider" id="slide4" />
-        <div id="slides">
-          <div id="overflow">
-            <div class="inner">
-              <div class="slide slide_1">
-                <div class="slide-content">
-                  <img
-                    class="avatar"
-                    src="./IMAGES/AVATAR.png"
-                    alt=""
-                    style="width: 1000px"; 
-                  />
-                </div>
-              </div>
-              <div class="slide slide_2">
-                <div class="slide-content">
-                  <img
-                    class="avatar"
-                    src="./IMAGES/AVATAR.png"
-                    alt=""
-                    style="width: 1000px"; 
-                  />
-                </div>
-              </div>
-              <div class="slide slide_3">
-                  <div class="slide-content">
-                      <img
-                        class="avatar"
-                        src="./IMAGES/AVATAR.png"
-                        alt=""
-                        style="width: 1000px"; 
-                      />
-              </div>
-              <!--
-                    <div class="slide slide_4">
-                  <div class="slide-content">
-                      <img
-                        class="avatar"
-                        src="./IMAGES/AVATAR.png"
-                        alt=""
-                        style="width: 700px"
-                      />
-              </div>
-            </div>
-              -->
-            
-          </div>
-        </div>
-        <div id="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
-        </div>
-        <div id="bullets">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
+      <div class="container">
+        <div class="section-title">
+          <h1 style="color: #246a76">
+            Mes projets scolaire en BTS SIO: <b> Qu'est-ce que les PPE</b> ?
+          </h1>
+          <p>
+            Les PPE (Projets Personnalisés Encadrés) sont des travaux (répartis
+            selon la spécialité choisie à partir du deuxième semestre). Ils
+            permettent de mettre en situation les élèves selon des contextes
+            qu'ils pourraient rencontrer dans le monde professionnel.
+          </p>
         </div>
       </div>
-      <div><span class="typed" data-typed-items="Bienvenue sur mon Portfolio !">Bienvenue sur mon Port</span></div>
-      
+    </section>
+
+    <main>
+      <h1>Diaporama</h1>
+      <div class="diapo" data-speed="2000" data-transition="700">
+        <div class="elements">
+          <div class="element">
+            <img src="images/index-slide01.jpg" alt="Clavier" />
+            <div class="caption">
+              <h2>Clavier</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                fuga!
+              </p>
+            </div>
+          </div>
+          <div class="element">
+            <img src="images/index-slide02.jpg" alt="Dame" />
+            <div class="caption">
+              <h2>Dame</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                fuga!
+              </p>
+            </div>
+          </div>
+          <div class="element">
+            <img src="images/index-slide03.jpg" alt="Paysage" />
+            <div class="caption">
+              <h2>Paysage</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Flèches -->
+        <i id="nav-gauche" class="las la-chevron-left"></i>
+        <i id="nav-droite" class="las la-chevron-right"></i>
+      </div>
+    </main>
   </body>
   <section>
     <div class="portfolio-description">
-        <h2>Cahier des charges</h2>
-        <p>
-           Afin  d'améliorer la sécurisation des accès aux applications métiers d'une entreprise par l'implémentation d'une solution d'authentification unique (Single Sign-On, SSO) via Keycloak, un système de gestion des identités et des accès (Identity and Access Management, IAM). Jusqu'à présent, l'authentification était gérée de manière indépendante pour chaque application, avec des identifiants (login/mot de passe) stockés dans leurs bases de données respectives. L'objectif est de centraliser l'authentification pour renforcer la sécurité et simplifier la gestion des accès.</p><br>
-        <h2>Nos missions </h2>
-        <p>
-            La tâche spécifique assignée consiste à modifier une application existante développée avec le framework Symfony, qui actuellement utilise une authentification locale (identifiants enregistrés dans une base de données). Il est demandé de récupérer une version antérieure de cette application (sans l'authentification gérée par Symfony), de configurer Keycloak pour l'authentification SSO, et de faire évoluer le code de l'application pour intégrer cette nouvelle méthode d'authentification.
-        </p>
-      </div>
+      <center><h2 style="color: #246a76">Cahier des charges</h2></center>
+      <p>
+        Afin d'améliorer la sécurisation des accès aux applications métiers
+        d'une entreprise par l'implémentation d'une solution d'authentification
+        unique (Single Sign-On, SSO) via Keycloak, un système de gestion des
+        identités et des accès (Identity and Access Management, IAM). Jusqu'à
+        présent, l'authentification était gérée de manière indépendante pour
+        chaque application, avec des identifiants (login/mot de passe) stockés
+        dans leurs bases de données respectives. L'objectif est de centraliser
+        l'authentification pour renforcer la sécurité et simplifier la gestion
+        des accès.
+      </p>
+      <br />
+      <center><h2 style="color: #246a76">Nos missions</h2></center>
+      <p>
+        La tâche spécifique assignée consiste à modifier une application
+        existante développée avec le framework Symfony, qui actuellement utilise
+        une authentification locale (identifiants enregistrés dans une base de
+        données). Il est demandé de récupérer une version antérieure de cette
+        application (sans l'authentification gérée par Symfony), de configurer
+        Keycloak pour l'authentification SSO, et de faire évoluer le code de
+        l'application pour intégrer cette nouvelle méthode d'authentification.
+      </p>
+    </div>
   </section>
 </html>
